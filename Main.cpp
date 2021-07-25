@@ -42,7 +42,7 @@ int main()
     Game game = Game();
     game.run();
     
-    CSVReader reader("card_data.csv");
+    CSVReader reader("data/card_data.csv");
     Table cardFileTable = reader.readData();
     
     cout << cardFileTable;
