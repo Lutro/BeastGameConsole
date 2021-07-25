@@ -1,6 +1,6 @@
 
-#ifndef UNTITLED3_PLAYER_H
-#define UNTITLED3_PLAYER_H
+#ifndef PLAYER_H
+#define PLAYER_H
 
 #include<string>
 #include <iostream>
@@ -9,37 +9,22 @@
 
 using namespace std;
 
+enum class CharacterType
+{
+    Hunter = 1, Warrior = 2, Shaman = 3
+};
+
 class Player {
 public:
     Player();
     Player(string player_name);
     bool still_alive();
-    int getAtk(){return current_atk;}
-    int getOAtk(){return original_atk;}
-    int getDef(){return current_def;}
-    int getHp(){return current_hp;}
-    int getOHp(){return original_hp;}
-    void reset();
-    // void getSkill(string, int, int, int);
-    // void actSkill(int);
-    // void buff(Skill);
-    // void buffOff(Skill);
-    // bool printSkills();
-    void takeDamage(int);
-    void check();
+    
+    void setSpiritType(CharacterType);
 
 private:
     string name;
-    int original_hp;
-    int current_hp;
-    int original_atk;
-    int current_atk;
-    int original_def;
-    int current_def;
-    // vector<Skill> skills;
-    
+    CharacterType spiritType;
+ };
 
-};
-
-
-#endif //UNTITLED3_PLAYER_H
+#endif //PLAYER_H
