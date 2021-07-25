@@ -34,14 +34,11 @@ ostream &operator<<(ostream &output, const Card c)
     
     switch(c.mType)
     {
-      case Type::Attack:
-      cardTypeStr = "Attack";
+      case Type::Combat :
+      cardTypeStr = "Combat";
       break;
-      case Type::Skill:
-      cardTypeStr = "Skill";
-      break;
-      case Type::Status:
-      cardTypeStr = "Status";
+      case Type::Magic :
+      cardTypeStr = "Magic";
       break;
     }
     switch(c.mColor)
@@ -58,12 +55,15 @@ ostream &operator<<(ostream &output, const Card c)
     }
     switch(c.mEffect)
     {
-      case Effect::Heal :
-        effectStr = "Heal";
-        break;
-      case Effect::Block :
-        effectStr = "Block";
-        break;
+      case Effect::Attack:
+      effectStr = "Attack";
+      break;
+      case Effect::Skill:
+      effectStr = "Skill";
+      break;
+      case Effect::Status:
+      effectStr = "Status";
+      break;
     }
     
     output << left

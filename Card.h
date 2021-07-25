@@ -8,17 +8,19 @@ using namespace std;
 
 enum class Type
 {
-    Attack,
-    Skill,
-    Status
+    Combat, Magic
 };
 
 enum class Color {
-    Red, Green, Blue
+    Red,
+    Green, 
+    Blue
 };
 
 enum class Effect {
-    Heal,Block
+    Attack,
+    Skill,
+    Status
 };
 
 class Card {
