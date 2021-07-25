@@ -1,4 +1,4 @@
-#include "Card.h"
+#include "headers/Card.h"
 
 const Type Card::getType() const { return mType; }
 void Card::setType(Type newType) { mType = newType; };

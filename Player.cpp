@@ -1,5 +1,5 @@
+#include "headers/Player.h"
 
-#include "Player.h"
 Player::Player() {
    
     name="Agent";

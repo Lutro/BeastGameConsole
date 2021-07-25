@@ -8,7 +8,7 @@
 #include <algorithm>
 #include <string>
 #include <fstream>
-#include "../Card.h"
+#include "../headers/Card.h"
 
 struct Table 
 {

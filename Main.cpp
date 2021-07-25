@@ -2,8 +2,8 @@
 #include <fstream>
 #include <iomanip> 
 #include "lib/Queue.h"
-#include "Card.h"
-#include "Game.h"
+#include "headers/Card.h"
+#include "headers/Game.h"
 #include "util/FileUtil.h"
 
 
@@ -46,6 +46,7 @@ int main()
     Table cardFileTable = reader.readData();
     
     cout << cardFileTable;
+    
   // Queue of int values
 //   Queue<int> intQueue;
 //   for (int i = 0; i < 10; i++)

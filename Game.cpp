@@ -1,5 +1,5 @@
-#include "Game.h"
-#include "Player.h"
+#include "headers/Game.h"
+#include "headers/Player.h"
 
 
 void Game::run()
