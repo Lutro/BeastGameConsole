@@ -45,7 +45,7 @@ int main()
     CSVReader reader("card_data.csv");
     Table cardFileTable = reader.readData();
     
-    
+    cout << cardFileTable;
   // Queue of int values
 //   Queue<int> intQueue;
 //   for (int i = 0; i < 10; i++)

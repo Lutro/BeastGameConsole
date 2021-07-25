@@ -1,3 +1,4 @@
+
 #include "FileUtil.h"
 /*
 * Parses through csv file line by line and returns the data
@@ -30,4 +31,28 @@ Table CSVReader::readData()
     table.numOfItems = dataList.size();
     table.data = dataList;
     return table;
+}
+
+ostream &operator<<(ostream &out, const Table t)
+{
+    out << left;
+    for (auto heading : t.header) 
+    {
+        (heading.size() > 7) ? 
+                    out << setw(50) << heading : 
+                    out << setw(10) << heading;
+    }
+    out << std::endl;
+    
+    for (auto row : t.data) 
+    {
+        for (auto word : row) 
+        {
+            (word.size() > 7) ? 
+                    out << setw(50) << word : 
+                    out << setw(10) << word;
+        }
+        out << std::endl;
+    }
+    out << std::endl;
 }

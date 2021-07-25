@@ -7,6 +7,7 @@
 #include <vector>
 #include <algorithm>
 #include <string>
+#include <fstream>
 #include "../Card.h"
 
 struct Table 
@@ -15,6 +16,7 @@ struct Table
     vector<vector<string>> data;
     int headerSize;
     int numOfItems;
+    friend ostream &operator<<(ostream &output, const Table);
 };
 
 class CSVReader
