@@ -1,4 +1,4 @@
-OBJS = Main.o Card.o Game.o Player.o FileUtil.o
+OBJS = Main.o Card.o Game.o Player.o FileUtil.o cardStore.o
 CC = g++ 
 
 LinkOut: $(OBJS)
@@ -19,6 +19,9 @@ Player.o:
 	
 FileUtil.o:
 	g++ -c util/FileUtil.cpp
+	
+cardStore.o:
+	g++ -c cardStore.cpp
 
 clean:
 	rm -f core LinkOut $(OBJS)

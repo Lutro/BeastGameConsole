@@ -17,7 +17,7 @@ public:
     void clearDeck();
     
 private:
-    PQueue<Card> list;
+    PQueue<Card> deckList;
     int currentSize;
 };
 
