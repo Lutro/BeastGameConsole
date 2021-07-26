@@ -1,9 +1,10 @@
 #include <iostream>
 #include <fstream>
 #include <iomanip> 
-#include "lib/Queue.h"
+#include "lib/PQueue.h"
 #include "headers/Card.h"
 #include "headers/Game.h"
+#include "headers/Deck.h"
 #include "util/FileUtil.h"
 
 
@@ -42,6 +43,12 @@ int main()
     Game game = Game();
     game.run();
     
+    CardStore cs;
+    Deck d = Deck(cs);
+    d = d.createHunterStarterDeck();
+    
+    printQueue(d.deckList);
+    cout << endl;
     
   // Queue of int values
 //   Queue<int> intQueue;

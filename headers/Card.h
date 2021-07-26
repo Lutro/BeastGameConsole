@@ -3,7 +3,10 @@
 #include <string>
 #include <iomanip>
 #include <fstream>
+#include <vector>
+
 #include "Entity.h"
+
 using namespace std;
 
 enum class Type
@@ -25,8 +28,12 @@ enum class Effect {
 
 class Card {
     public:
+        Card();
+        Card(vector<string>);
+    
         const Type getType() const;
         void setType(Type);
+        void setType(string);
         const Color getColor() const;
         void setColor(Color);
         const int getCost() const;
@@ -41,6 +48,7 @@ class Card {
         void setDescription(string);
         const Effect getEffect() const;
         void setEffect(Effect);
+        void setEffect(string);
     
     
     friend ostream &operator<<(ostream &output, const Card c);

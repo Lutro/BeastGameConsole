@@ -63,7 +63,7 @@ Card CardStore::getRandomCard(CharacterType ctype)
             store = &getShamanCardTable();
             break;
     }
+    cout << store << endl;
     Card c = Card();
-    // Card c = Card(vector<string> store.getRandomRow());
     return c;
 }

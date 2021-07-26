@@ -31,8 +31,8 @@ public:
     Deck& createShamanStarterDeck();
     Deck& createHunterStarterDeck();
     
-private:
     PQueue<Card> deckList;
+private:
     int currentSize;
     string deckName;
     CardStore* rogueCardStoreRef;

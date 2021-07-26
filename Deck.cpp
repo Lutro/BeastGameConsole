@@ -35,9 +35,11 @@ Deck& Deck::createHunterStarterDeck()
     Deck *d = new Deck();
     d->setCurrentSize(STARTER_DECK_SIZE);
     d->setDeckName("Starter Hunter Deck");
+    
     for (int i = 0; i < STARTER_DECK_SIZE; i++) 
     {
         d->deckList.enqueue(rogueCardStoreRef->getRandomCard(CharacterType::Hunter),i);
     }
     return *d;
 }
+

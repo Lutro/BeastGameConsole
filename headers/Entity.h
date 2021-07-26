@@ -2,6 +2,7 @@
 #define ENTITY_H
 
 #include <string>
+#include <iostream>
 #include "Card.h"
 // #include "Deck.h"
 
@@ -9,6 +10,34 @@ enum class CharacterType
 {
     Hunter = 1, Warrior = 2, Shaman = 3
 };
+
+// CharacterType CharacterType::string_to_ctype(std::string ctypeStr)
+// {
+//     if (ctype.compare("Hunter")
+//         return CharacterType::Hunter;
+//     if (ctype.compare("Warrior")
+//         return CharacterType::Warrior;
+//     if (ctype.compare("Shaman")
+//         return CharacterType::Shaman;
+//     else
+//         return CharacterType::Shaman;
+// }
+
+// string CharacterType::ctype_toString(CharacterType ctype)
+// {
+//     switch(ctype)
+//     {
+//         case 1:
+//             return "Hunter";
+//             break;
+//         case 2:
+//             return "Warrior";
+//             break;
+//         case 3:
+//             return "Shaman"
+//             break;
+//     }
+// }
 
 struct Sprite {
     std::string spriteName;

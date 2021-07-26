@@ -1,6 +1,7 @@
 #ifndef QUEUE_H
 #define QUEUE_H
 #include "LinkedList.h"
+#include <iostream>
 #include <stdexcept>
 using namespace std;
   
@@ -45,5 +46,27 @@ int PQueue<T>::getSize() const
 {
   return list.getSize();
 }
+
+template<typename T>
+void printQueue(PQueue<T>& queue)
+{
+  cout << "======================" << endl;
+  while (queue.getSize() > 0)
+    cout << queue.dequeue();
+  cout << endl;
+}
+
+// template<typename T>
+// void printQueue(PQueue<T>& n, string header[]) {
+//     cout << "\nPrinting the data..." << endl;
+//     Person p;
+    
+//     cout << setw(20) << header[0] << setw(15) << header[1] << endl;
+//     while (n.getSize() > 0) {
+//         p = n.dequeue();
+//         cout << setw(20) << p.name << setw(15) << p.car << endl;
+//     }
+//     cout << endl;
+// } 
   
 #endif
