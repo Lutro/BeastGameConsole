@@ -7,6 +7,7 @@
 #include <vector>
 #include <algorithm>
 #include <string>
+#include <ctime>
 #include <fstream>
 #include "../headers/Card.h"
 
