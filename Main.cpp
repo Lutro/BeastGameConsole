@@ -43,6 +43,8 @@ int main()
     Game game = Game();
     game.run();
     
+    srand(time(NULL));
+    
     CardStore cs;
     Deck d = Deck(cs);
     d = d.createHunterStarterDeck();

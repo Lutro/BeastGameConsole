@@ -64,7 +64,6 @@ Card CardStore::getRandomCard(CharacterType ctype)
             break;
     }
     
-    srand(time(NULL));
     
     int randomIndex = rand() % store->numOfItems;
     Card c = Card(store->data[randomIndex]);
