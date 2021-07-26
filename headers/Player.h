@@ -6,10 +6,11 @@
 #include <iostream>
 #include <vector>
 #include "Card.h"
+#include "Hand.h"
 
 using namespace std;
 
-class Player {
+class Player: public Entity {
 public:
     Player();
     Player(string player_name);
@@ -18,8 +19,7 @@ public:
     void setSpiritType(CharacterType);
 
 private:
-    string name;
-    CharacterType spiritType;
+    Hand playerHand;
  };
 
 #endif //PLAYER_H
