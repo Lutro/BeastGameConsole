@@ -9,11 +9,6 @@
 
 using namespace std;
 
-enum class CharacterType
-{
-    Hunter = 1, Warrior = 2, Shaman = 3
-};
-
 class Player {
 public:
     Player();

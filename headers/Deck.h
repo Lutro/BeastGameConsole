@@ -4,13 +4,23 @@
 #include "Card.h"
 using namespace std;
 
+int const STARTER_DECK_SIZE = 10;
+
 template<typename T>
 class Deck
 {
 public:
     Deck();
-    ~Deck();
+    Deck(CharacterType);
+    
     drawCard();
+    
+    const int getCurrentDeckSize() const;
+    void setCurrentSize(int);
+    
+    const string getDeckName() const;
+    void setDeckName(string);
+    
     void shuffle();
     void addCard(Card c);
     void removeCard(int index);
@@ -22,6 +32,7 @@ public:
 private:
     PQueue<Card> deckList;
     int currentSize;
+    string deckName;
 };
 
 

@@ -2,7 +2,7 @@
 #include "../util/FileUtil.h"
 
 
-struct cardStore 
+class cardStore 
 {
     Table allCardsTable;
     
@@ -20,4 +20,6 @@ struct cardStore
     
     const Table getHunterCardTable() const;
     void setHunterCards();
+    
+    Card getRandomCard(CharacterType);
 };
