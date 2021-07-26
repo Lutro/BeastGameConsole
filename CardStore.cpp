@@ -51,7 +51,6 @@ Card CardStore::getRandomCard()
 Card CardStore::getRandomCard(CharacterType ctype)
 {
     const Table * store;
-    Card c = Card();
     switch(ctype)
     {
         case CharacterType::Hunter :
@@ -64,5 +63,7 @@ Card CardStore::getRandomCard(CharacterType ctype)
             store = &getShamanCardTable();
             break;
     }
+    Card c = Card();
+    // Card c = Card(vector<string> store.getRandomRow());
     return c;
 }
