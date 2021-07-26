@@ -47,7 +47,7 @@ class Card {
     
     private:
         Type mType;
-        Sprite mSprite;
+        // Sprite mSprite;
         int mCost;
         int mRarity;
         int mValue;
