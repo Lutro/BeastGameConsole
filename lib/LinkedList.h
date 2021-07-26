@@ -6,105 +6,136 @@ using namespace std;
 template<typename T>
 class Node
 {
-public:
-  T element;  // Element contained in the node
-  Node<T>* next; // Pointer to the next node
-
-  Node() // No-arg constructor
-  {
-    next = nullptr;
-  }
-
-  Node(const T& e) // Constructor
-  {
-    this->element = e;
-    next = nullptr;
-  }
+  public:
+    T element;  // Element contained in the node
+    Node<T>* next; // Pointer to the next node
+    int priority;
+  
+    Node() // No-arg constructor
+    {
+      next = nullptr;
+    }
+  
+    Node(const T& e) // Constructor
+    {
+      this->element = e;
+      next = nullptr;
+    }
 };
 
 template<typename T>
 class Iterator : public std::iterator<std::forward_iterator_tag, T>
 {
-public:
-  Iterator(Node<T>* p)
-  {
-    current = p;
-  }
-
-  Iterator operator++() // Prefix ++
-  {
-    current = current->next;
-    return *this;
-  }
-
-  Iterator operator++(int dummy) // Postfix ++
-  {
-    Iterator temp(current);
-    current = current->next;
-    return temp;
-  }
-
-  T& operator*()
-  {
-    return current->element;
-  }
-
-  bool operator==(const Iterator<T>& iterator)
-  {
-    return current == iterator.current;
-  }
-
-  bool operator!=(const Iterator<T>& iterator)
-  {
-    return current != iterator.current;
-  }
-
-private:
-  Node<T>* current;
+  public:
+    Iterator(Node<T>* p)
+    {
+      current = p;
+    }
+  
+    Iterator operator++() // Prefix ++
+    {
+      current = current->next;
+      return *this;
+    }
+  
+    Iterator operator++(int dummy) // Postfix ++
+    {
+      Iterator temp(current);
+      current = current->next;
+      return temp;
+    }
+  
+    T& operator*()
+    {
+      return current->element;
+    }
+  
+    bool operator==(const Iterator<T>& iterator)
+    {
+      return current == iterator.current;
+    }
+  
+    bool operator!=(const Iterator<T>& iterator)
+    {
+      return current != iterator.current;
+    }
+  
+  private:
+    Node<T>* current;
 };
 
 template<typename T>
 class LinkedList
 {
-public:
-  LinkedList(); // No-arg constructor
-  LinkedList(const LinkedList<T>& list); // Copy constructor
-  virtual ~LinkedList(); // Destructor
-  LinkedList<T>& operator=(const LinkedList<T>& list);
-  void addFirst(const T& e);
-  void addLast(const T& e);
-  T& getFirst() const;
-  T& getLast() const;
-  T removeFirst();
-  T removeLast();
-  void add(const T& e);
-  void add(int index, const T& e);
-  void clear();
-  bool contains(const T& e) const;
-  T& get(int index) const;
-  int indexOf(const T& e) const;
-  bool isEmpty() const;
-  int lastIndexOf(const T& e) const;
-  void remove(const T& e);
-  int getSize() const;
-  T removeAt(int index);
-  T& set(int index, const T& e);
-
-  Iterator<T> begin() const
-  {
-    return Iterator<T>(head);
-  }
-
-  Iterator<T> end() const
-  {
-    return Iterator<T>(tail->next);
-  }
-
-private:
-  Node<T>* head;
-  Node<T>* tail;
-  int size;
+  public:
+    LinkedList(); // No-arg constructor
+    LinkedList(const LinkedList<T>& list); // Copy constructor
+    virtual ~LinkedList(); // Destructor
+    LinkedList<T>& operator=(const LinkedList<T>& list);
+    void addFirst(const T& e);
+    void addLast(const T& e);
+    T& getFirst() const;
+    T& getLast() const;
+    T removeFirst();
+    T removeLast();
+    void add(const T& e);
+    void add(int index, const T& e);
+    void clear();
+    bool contains(const T& e) const;
+    T& get(int index) const;
+    int indexOf(const T& e) const;
+    bool isEmpty() const;
+    int lastIndexOf(const T& e) const;
+    void remove(const T& e);
+    int getSize() const;
+    T removeAt(int index);
+    T& set(int index, const T& e);
+  
+    void insert(int priority, const T&e);
+    
+    Iterator<T> begin() const
+    {
+      return Iterator<T>(head);
+    }
+  
+    Iterator<T> end() const
+    {
+      return Iterator<T>(tail->next);
+    }
+  
+  private:
+    Node<T>* head;
+    Node<T>* tail;
+    int size;
 };
+
+template<typename T>
+void LinkedList<T>::insert(int priority, const T& e)
+  {
+    Node<T> *temp, *q;
+    temp = new Node<T>(e);
+ 
+    temp->priority = priority;
+    if (size == 0 || priority < head->priority)
+    {
+      temp->next = head;
+      head = temp;
+    }
+    else
+    {
+      q = head;
+      while (q->next != NULL && q->next->priority <= priority)
+        q = q->next;
+      temp->next = q->next;
+      q->next = temp;
+    }
+    size++;
+    
+    
+   
+  }
+
+
 
 template<typename T>
 LinkedList<T>::LinkedList()

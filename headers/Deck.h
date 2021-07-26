@@ -2,18 +2,20 @@
 #define DECK_H
 #include <stdexcept>
 #include "Card.h"
+#include "CardStore.h"
+#include "../lib/PQueue.h"
 using namespace std;
 
-int const STARTER_DECK_SIZE = 10;
+const int STARTER_DECK_SIZE = 10;
 
-template<typename T>
 class Deck
 {
 public:
     Deck();
-    Deck(CharacterType);
     
-    drawCard();
+    Deck(CardStore&);
+    
+    Card drawCard();
     
     const int getCurrentDeckSize() const;
     void setCurrentSize(int);
@@ -33,6 +35,7 @@ private:
     PQueue<Card> deckList;
     int currentSize;
     string deckName;
+    CardStore* rogueCardStoreRef;
 };
 
 
