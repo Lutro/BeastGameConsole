@@ -15,6 +15,9 @@ public:
     void addCard(Card c);
     void removeCard(int index);
     void clearDeck();
+    Deck& createWarriorStarterDeck();
+    Deck& createShamanStarterDeck();
+    Deck& createHunterStarterDeck();
     
 private:
     PQueue<Card> deckList;
