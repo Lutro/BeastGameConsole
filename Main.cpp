@@ -42,10 +42,6 @@ int main()
     Game game = Game();
     game.run();
     
-    CSVReader reader("data/card_data.csv");
-    Table cardFileTable = reader.readData();
-    
-    cout << cardFileTable;
     
   // Queue of int values
 //   Queue<int> intQueue;
