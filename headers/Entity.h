@@ -3,13 +3,13 @@
 
 #include <string>
 #include <iostream>
-#include "Card.h"
-// #include "Deck.h"
+#include "Deck.h"
+// #include "Hand.h"
 
-enum class CharacterType
-{
-    Hunter = 1, Warrior = 2, Shaman = 3
-};
+// enum class CharacterType
+// {
+//     Hunter = 1, Warrior = 2, Shaman = 3
+// };
 
 // CharacterType CharacterType::string_to_ctype(std::string ctypeStr)
 // {
@@ -48,12 +48,16 @@ class Entity
 {
     public:
         Entity();
+        Entity(std::string name);
+        void generateDeck(CharacterType);
+        bool still_alive();
         
         // Mutators
         void setEntityName(std::string name);
         void setEntityType(CharacterType);
         void setEntityHitpoints(int newHitpoints);
         void setEntityMana(int newMana);
+        void setSpiritType(CharacterType);
         
         void damage(int points);
         void repair(int points);
@@ -62,14 +66,14 @@ class Entity
         std::string getEntityName();
         int getEntityHitpoints();
         int getEntityMana();
-        // Deck getDeck();
+        Deck getDeck();
         
         
     private: 
         std::string name;
         int hitpoints;
         int mana;
-        // Deck entityDeck;
+        Deck entityDeck;
         CharacterType spiritType; // SpiritType is the Role
 };
 

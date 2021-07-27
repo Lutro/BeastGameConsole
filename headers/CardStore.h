@@ -1,6 +1,10 @@
 
 #include "../util/FileUtil.h"
 
+enum class CharacterType
+{
+    Hunter = 1, Warrior = 2, Shaman = 3, Fox = 4
+};
 
 class CardStore 
 {

@@ -1,5 +1,5 @@
 #include "headers/Game.h"
-#include "headers/Player.h"
+#include "headers/Entity.h"
 
 
 void Game::run()
@@ -59,7 +59,7 @@ void Game::startNewGame()
     cin >> playerName;
     
     // init player
-    mPlayer = Player(playerName);
+    mPlayer = Entity(playerName);
     
     // get player character type
     cout << "What Is Your Animal Spirit Force:" << endl;

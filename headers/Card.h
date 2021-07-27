@@ -5,8 +5,6 @@
 #include <fstream>
 #include <vector>
 
-#include "Entity.h"
-
 using namespace std;
 
 enum class Type

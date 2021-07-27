@@ -1,7 +1,7 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "Player.h"
+#include "Entity.h"
 
 class Game 
 {
@@ -16,7 +16,7 @@ public:
     // save to file
 
 private:
-	Player  mPlayer;
+	Entity  mPlayer;
 };
 
 #endif // GAME_H
