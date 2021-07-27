@@ -79,4 +79,8 @@ ostream &operator<<(ostream &output, const Deck d)
     }
     output << "\n======================" << endl;
     
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 53783e4d4e5539f2abdbb8279c45aa5b56e0c55d
