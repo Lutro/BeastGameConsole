@@ -12,7 +12,7 @@ Player::Player(string player_name)
 
 void Player::setPlayerDeck(Deck d)
 {
-    playerDeck = &d;
+    playerDeck = d;
 }
 
 const CharacterType Player::getSpiritType() const
@@ -57,7 +57,7 @@ bool Player::still_alive()
         "\nPlayer Spirit: " << spiritTypeStr <<
         "\nHP: " << p.hitpoints <<
         "\nMana: " << p.mana <<
-        "\nDeck: \n" << *(p.playerDeck) <<
+        "\nDeck: \n" << (p.playerDeck) <<
         "\n======================"
         << endl;
         

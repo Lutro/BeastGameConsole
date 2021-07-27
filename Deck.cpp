@@ -32,7 +32,7 @@ void Deck::setDeckName(string newdname)
     deckName = newdname;
 }
 
-Deck& Deck::createHunterStarterDeck()
+Deck Deck::createHunterStarterDeck()
 {
     setCurrentSize(STARTER_DECK_SIZE);
     setDeckName("Starter Hunter Deck");
@@ -44,7 +44,7 @@ Deck& Deck::createHunterStarterDeck()
     return *this;
 }
 
-Deck& Deck::createWarriorStarterDeck()
+Deck Deck::createWarriorStarterDeck()
 {
     setCurrentSize(STARTER_DECK_SIZE);
     setDeckName("Starter Warrior Deck");
@@ -56,7 +56,7 @@ Deck& Deck::createWarriorStarterDeck()
     return *this;
 }
 
-Deck& Deck::createShamanStarterDeck()
+Deck Deck::createShamanStarterDeck()
 {
     setCurrentSize(STARTER_DECK_SIZE);
     setDeckName("Starter Shaman Deck");

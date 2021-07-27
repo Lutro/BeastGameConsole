@@ -79,16 +79,22 @@ void Game::startNewGame()
             case 1:
                 mPlayer.setSpiritType(CharacterType::Hunter);
                 isCharacterSet = true;
+                mPlayer.setEntityHitpoints(20);
+                mPlayer.setEntityMana(20);
                 playerStarterDeck = playerStarterDeck.createHunterStarterDeck();
                 break;
             case 2:
                 mPlayer.setSpiritType(CharacterType::Warrior);
                 isCharacterSet = true;
+                mPlayer.setEntityHitpoints(35);
+                mPlayer.setEntityMana(5);
                 playerStarterDeck = playerStarterDeck.createWarriorStarterDeck();
                 break;
             case 3:
                 mPlayer.setSpiritType(CharacterType::Shaman);
                 isCharacterSet = true;
+                mPlayer.setEntityHitpoints(15);
+                mPlayer.setEntityMana(25);
                 playerStarterDeck = playerStarterDeck.createShamanStarterDeck();
                 break;
             case 4:
@@ -103,7 +109,6 @@ void Game::startNewGame()
                 cout << "That is not a valid character type. Try again." << endl;
                 break;
         }
-        
         mPlayer.setPlayerDeck(playerStarterDeck);
        
         cout << mPlayer;

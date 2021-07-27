@@ -24,7 +24,7 @@ public:
     
 private:
     Hand playerHand;
-    Deck *playerDeck;
+    Deck playerDeck;
  };
 
 #endif //PLAYER_H
