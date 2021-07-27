@@ -7,14 +7,15 @@ Card::Card()
 
 Card::Card(vector<string> row)
 {
-  setType(row[0]);
+  setType(stoi(row[0]));
   // setSprite(row[1]);
-  setEffect(row[2]);
-  setCost(stoi(row[3]));
-  setRarity(stoi(row[4]));
-  setValue(stoi(row[5]));
-  setName(row[6]);
-  setDescription(row[7]);
+  setCost(stoi(row[2]));
+  setRarity(stoi(row[3]));
+  setValue(stoi(row[4]));
+  setName(row[5]);
+  setDescription(row[6]);
+  setEffect(stoi(row[7]));
+  setColor(stoi(row[7]));
   
 }
 
@@ -26,18 +27,41 @@ void Card::setType(Type newType)
   
 }
 
-void Card::setType(string ctypeStr) 
+void Card::setType(int ctype) 
 { 
-    if (ctypeStr.compare("Magic") == 0)
+    switch(ctype)
+    {
+      case 1:
+        mType = Type::Combat;
+        break;
+      case 2:
         mType = Type::Magic;
-    if (ctypeStr.compare("Combat") == 0)
-        mType = Type::Combat;
-    else
-        mType = Type::Combat;
+        break;
+    }
 }
 
 const Color Card::getColor() const { return mColor; }
-void Card::setColor(Color newColor) { mColor = newColor; }
+
+void Card::setColor(Color newColor) 
+{ 
+  mColor = newColor;
+}
+
+void Card::setColor(int effect) 
+{ 
+  switch(effect)
+  {
+    case 1:
+      mColor = Color::Red;
+      break;
+    case 2:
+      mColor = Color::Blue;
+      break;
+    case 3:
+      mColor = Color::Green;
+      break;
+  };
+}
 
 const int Card::getCost() const { return mCost; }
 void Card::setCost(int newCost) { mCost = newCost; }
@@ -57,18 +81,20 @@ void Card::setName(string newName) { mCardName = newName; }
 const Effect Card::getEffect() const { return mEffect; }
 void Card::setEffect(Effect e) { mEffect = e; }
 
-void Card::setEffect(string effectStr) 
-{
-
-    if (effectStr.compare("attack") == 0)
+void Card::setEffect(int e) 
+{ 
+    switch(e)
+    {
+      case 1:
         mEffect = Effect::Attack;
-    if (effectStr.compare("skill") == 0)
+        break;
+      case 2:
         mEffect = Effect::Skill;
-    if (effectStr.compare("status") == 0)
+        break;
+      case 3:
         mEffect = Effect::Status;
-    else
-        mEffect = Effect::Status;
-
+        break;
+    }
 }
 
 // print card
@@ -81,12 +107,13 @@ ostream &operator<<(ostream &output, const Card c)
     switch(c.mType)
     {
       case Type::Combat :
-      cardTypeStr = "Combat";
-      break;
+        cardTypeStr = "Combat";
+        break;
       case Type::Magic :
-      cardTypeStr = "Magic";
-      break;
+        cardTypeStr = "Magic";
+        break;
     }
+    
     switch(c.mColor)
     {
       case Color::Red:
@@ -99,24 +126,27 @@ ostream &operator<<(ostream &output, const Card c)
         colorStr = "Blue";
         break;
     }
+    
     switch(c.mEffect)
     {
       case Effect::Attack:
-      effectStr = "Attack";
-      break;
+        effectStr = "Attack";
+        break;
       case Effect::Skill:
-      effectStr = "Skill";
-      break;
+        effectStr = "Skill";
+        break;
       case Effect::Status:
-      effectStr = "Status";
-      break;
+        effectStr = "Status";
+        break;
     }
     
     output << left
             << setw(10) << cardTypeStr
-            << setw(30) << c.mCardName
-            << setw(30) << c.mDescription
             << setw(10) << c.mCost
             << setw(10) << c.mRarity
-            << setw(10) << colorStr << endl;
+            << setw(10) << effectStr
+            << setw(10) << colorStr
+            << setw(30) << c.mCardName
+            << setw(50) << c.mDescription
+            << endl;
 }

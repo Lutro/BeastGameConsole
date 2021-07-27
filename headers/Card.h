@@ -33,9 +33,10 @@ class Card {
     
         const Type getType() const;
         void setType(Type);
-        void setType(string);
+        void setType(int);
         const Color getColor() const;
         void setColor(Color);
+        void setColor(int);
         const int getCost() const;
         void setCost(int);
         const int getRarity() const;
@@ -48,7 +49,7 @@ class Card {
         void setDescription(string);
         const Effect getEffect() const;
         void setEffect(Effect);
-        void setEffect(string);
+        void setEffect(int);
     
     
     friend ostream &operator<<(ostream &output, const Card c);

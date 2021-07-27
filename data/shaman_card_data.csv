@@ -1,68 +1,64 @@
 type,sprite,effect,cost,rarity,value,cardName,description
-combat,bear,skill,3,2,0,Caiman crocodilus,Down-sized bandwidth-monitored concept
-combat,fox,status,3,2,-4,Macropus agilis,Balanced didactic budgetary management
-magic,eagle,skill,1,2,-2,Coluber constrictor,Optimized multimedia methodology
-combat,bear,attack,1,2,3,Ciconia episcopus,Ergonomic high-level algorithm
-combat,eagle,skill,3,3,-4,Milvago chimachima,Optional clear-thinking time-frame
-magic,wolf,status,3,1,2,Funambulus pennati,Implemented cohesive flexibility
-magic,fox,attack,3,1,0,Vanellus armatus,Inverse human-resource algorithm
-magic,eagle,attack,1,1,-3,Cracticus nigroagularis,Future-proofed 5th generation policy
-combat,wolf,skill,2,3,4,Chlamydosaurus kingii,Function-based logistical protocol
-combat,fox,skill,1,2,2,Echimys chrysurus,Balanced 24 hour definition
-magic,wolf,skill,2,1,2,Meles meles,Optional bottom-line encryption
-magic,eagle,skill,2,1,-3,Petaurus breviceps,Intuitive methodical website
-combat,fox,skill,2,1,-3,Haematopus ater,Programmable global ability
-combat,eagle,status,1,2,1,Libellula quadrimaculata,Polarised well-modulated utilisation
-combat,wolf,attack,1,3,-1,Cathartes aura,Up-sized holistic methodology
-magic,eagle,status,3,2,5,Paraxerus cepapi,Stand-alone didactic model
-combat,fox,status,1,3,-4,Anthropoides paradisea,Synergized global moderator
-magic,fox,attack,3,1,-3,Colobus guerza,De-engineered interactive policy
-combat,fox,attack,2,3,2,Hymenolaimus malacorhynchus,Future-proofed disintermediate internet solution
-magic,wolf,skill,1,2,0,Bucephala clangula,Polarised non-volatile local area network
-combat,bear,attack,3,2,4,Felis concolor,Inverse zero defect challenge
-magic,bear,attack,2,1,3,Cordylus giganteus,Expanded methodical capacity
-combat,fox,attack,2,3,3,Kobus vardonii vardoni,Face to face full-range capacity
-combat,wolf,status,2,3,-5,Prionace glauca,Multi-lateral client-server website
-magic,wolf,attack,1,2,3,Oryx gazella callotis,Focused reciprocal structure
-magic,bear,skill,1,2,2,Cyrtodactylus louisiadensis,Virtual encompassing encoding
-magic,eagle,skill,2,1,2,unavailable,Automated multimedia data-warehouse
-magic,bear,status,2,1,-3,Sterna paradisaea,Balanced tertiary database
-combat,eagle,status,3,3,-5,Zonotrichia capensis,Secured modular attitude
-combat,fox,attack,3,2,0,Nyctea scandiaca,Digitized client-driven project
-combat,wolf,skill,1,3,-1,Colaptes campestroides,Proactive 6th generation circuit
-magic,eagle,skill,3,1,-3,Thamnolaea cinnmomeiventris,Customizable systemic instruction set
-combat,eagle,skill,2,1,2,Limosa haemastica,De-engineered scalable hub
-combat,eagle,status,2,1,4,Pycnonotus nigricans,Enterprise-wide full-range definition
-combat,wolf,skill,2,1,0,Spizaetus coronatus,Persevering impactful Graphical User Interface
-combat,bear,1,2,2,Centrocercus urophasianus,Mandatory full-range leverage,status
-combat,bear,1,2,5,Zosterops pallidus,Extended context-sensitive neural-net,status
-magic,wolf,3,1,-4,Anhinga rufa,Future-proofed high-level concept,status
-magic,wolf,3,1,-2,Ninox superciliaris,Grass-roots client-driven instruction set,status
-magic,wolf,2,2,-4,Merops nubicus,Intuitive attitude-oriented benchmark,skill
-magic,bear,1,3,4,Propithecus verreauxi,Virtual uniform encryption,skill
-combat,eagle,1,1,5,Larus sp.,Configurable dynamic application,skill
-combat,bear,1,3,1,Mustela nigripes,Secured composite instruction set,attack
-combat,wolf,1,3,-2,Varanus salvator,Balanced didactic database,attack
-combat,wolf,1,2,5,Eira barbata,Optimized foreground system engine,attack
-magic,fox,3,1,-2,Felis caracal,Total contextually-based application,attack
-combat,wolf,2,3,2,Propithecus verreauxi,Compatible eco-centric migration,attack
-magic,wolf,3,1,2,Tetracerus quadricornis,Adaptive 4th generation data-warehouse,status
-combat,eagle,2,2,-2,Uraeginthus angolensis,Re-contextualized solution-oriented strategy,attack
-magic,bear,2,2,2,Nycticorax nycticorax,Advanced encompassing complexity,attack
-magic,fox,1,3,5,Ara ararauna,Ergonomic optimizing artificial intelligence,status
-combat,bear,3,2,-1,Castor canadensis,Vision-oriented tertiary conglomeration,skill
-combat,eagle,2,2,3,Ninox superciliaris,Centralized explicit functionalities,skill
-magic,eagle,1,3,3,Aegypius occipitalis,Optimized non-volatile approach,attack
-combat,wolf,1,3,0,unavailable,Innovative uniform installation,skill
-combat,bear,2,3,5,Haliaetus vocifer,Optimized actuating success,attack
-magic,fox,3,1,3,Larus dominicanus,Object-based needs-based capability,attack
-combat,wolf,3,1,1,unavailable,Streamlined mobile product,status
-combat,wolf,1,2,5,Anser caerulescens,Grass-roots high-level challenge,skill
-combat,eagle,1,3,-5,Cacatua galerita,Team-oriented 24/7 matrix,status
-combat,bear,2,3,0,Bucephala clangula,Implemented next generation ability,status
-combat,bear,2,3,-2,Leipoa ocellata,Expanded national synergy,skill
-magic,eagle,2,3,-2,Globicephala melas,Cross-platform composite framework,skill
-magic,fox,1,1,0,Agkistrodon piscivorus,Re-contextualized solution-oriented product,skill
-magic,bear,2,3,-1,Libellula quadrimaculata,Proactive tangible project,attack
-combat,wolf,1,3,2,Iguana iguana,User-friendly modular Graphical User Interface,status
-magic,bear,2,3,1,Ardea cinerea,Configurable disintermediate artificial intelligence,skill
+2,eagle,1,3,4,Theropithecus gelada,Progressive logistical array,1
+2,eagle,2,3,0,Theropithecus gelada,Virtual human-resource extranet,1
+2,bear,3,1,-5,unavailable,Intuitive eco-centric functionalities,2
+2,bear,1,3,5,Cacatua tenuirostris,Triple-buffered scalable service-desk,1
+1,eagle,1,1,5,Castor canadensis,Cross-platform asymmetric functionalities,2
+2,wolf,1,3,-3,Cordylus giganteus,Robust upward-trending open architecture,2
+2,wolf,3,1,0,Psophia viridis,Ameliorated object-oriented complexity,1
+1,fox,2,2,-3,Uraeginthus granatina,Stand-alone 4th generation initiative,3
+1,fox,2,2,-3,Colobus guerza,Streamlined asymmetric intranet,1
+1,wolf,2,2,5,Varanus salvator,Streamlined eco-centric migration,1
+1,bear,1,1,-1,Uraeginthus angolensis,Focused discrete info-mediaries,1
+2,wolf,1,2,-5,Theropithecus gelada,Horizontal explicit knowledge base,3
+2,wolf,1,2,1,Alopex lagopus,Seamless zero tolerance concept,2
+2,eagle,3,3,0,Macropus parryi,Organized discrete emulation,3
+1,eagle,3,2,-1,Semnopithecus entellus,Upgradable asynchronous challenge,2
+2,wolf,1,2,-4,Bettongia penicillata,Profound neutral conglomeration,1
+2,wolf,2,2,-3,Butorides striatus,Phased eco-centric moratorium,1
+1,fox,2,2,-1,Antilocapra americana,Extended multimedia architecture,1
+2,fox,1,1,-4,Trachyphonus vaillantii,Enterprise-wide reciprocal strategy,2
+1,eagle,3,3,5,Bradypus tridactylus,Extended encompassing productivity,2
+1,bear,1,3,-4,Tamiasciurus hudsonicus,Profound upward-trending protocol,1
+2,wolf,2,2,4,Petaurus norfolcensis,Networked systematic local area network,1
+1,eagle,1,3,3,Smithopsis crassicaudata,Compatible client-driven help-desk,3
+1,eagle,1,1,-5,Neotis denhami,Organic local neural-net,2
+1,wolf,2,3,3,Phalaropus fulicarius,Face to face clear-thinking matrix,3
+2,wolf,2,3,5,Odocoileus hemionus,Object-based real-time secured line,3
+1,fox,2,2,2,Egretta thula,Quality-focused intangible system engine,2
+1,fox,1,2,-4,Coluber constrictor foxii,Configurable needs-based orchestration,1
+2,wolf,3,1,4,Larus sp.,Pre-emptive tangible capacity,3
+1,fox,1,3,-5,Crotalus cerastes,Customer-focused transitional workforce,2
+1,fox,1,1,-5,Phalaropus fulicarius,Object-based homogeneous interface,3
+1,fox,3,3,-4,Crotalus cerastes,Balanced hybrid benchmark,2
+2,wolf,3,3,-1,Podargus strigoides,Implemented multi-state core,1
+2,fox,3,3,-5,Larus dominicanus,Front-line needs-based initiative,1
+2,wolf,2,3,2,Nannopterum harrisi,De-engineered secondary algorithm,2
+1,bear,1,3,5,Theropithecus gelada,Managed dedicated installation,3
+2,wolf,1,1,-5,Ovis dalli stonei,Persevering high-level parallelism,2
+1,bear,2,2,-4,Trichosurus vulpecula,Stand-alone systematic secured line,2
+2,eagle,1,2,3,Porphyrio porphyrio,Multi-layered secondary implementation,3
+1,fox,2,2,-4,Phoca vitulina,Enhanced discrete success,2
+2,wolf,2,2,-5,Bubalornis niger,Versatile local migration,3
+2,eagle,3,1,-3,Phaethon aethereus,Virtual disintermediate Graphic Interface,2
+1,fox,1,3,0,Eumetopias jubatus,Cross-platform even-keeled contingency,1
+2,wolf,3,1,2,Lophoaetus occipitalis,Configurable uniform knowledge base,1
+1,bear,3,3,-1,Potorous tridactylus,Sharable maximized alliance,2
+2,eagle,3,3,5,Mazama americana,Up-sized mobile core,2
+2,bear,3,3,1,Sterna paradisaea,Object-based local neural-net,3
+1,wolf,1,3,-4,Nectarinia chalybea,Vision-oriented bottom-line capacity,2
+2,fox,2,3,5,Limnocorax flavirostra,Phased client-driven software,1
+1,eagle,2,3,-5,Paroaria gularis,Persevering client-server portal,1
+1,fox,2,3,2,Canis mesomelas,Right-sized interactive toolset,1
+1,eagle,1,2,-3,Gymnorhina tibicen,Adaptive eco-centric hierarchy,1
+2,eagle,1,3,0,Tragelaphus strepsiceros,Pre-emptive real-time model,2
+1,bear,3,2,-2,Crotalus cerastes,Re-contextualized executive service-desk,2
+2,bear,1,3,4,Cracticus nigroagularis,Visionary multi-state project,2
+1,fox,2,1,-5,Ratufa indica,Reduced analyzing attitude,1
+2,wolf,1,2,-5,Paraxerus cepapi,Quality-focused cohesive alliance,1
+2,bear,1,2,-2,Notechis semmiannulatus,Customizable dedicated middleware,2
+1,wolf,2,2,2,Geococcyx californianus,Integrated incremental core,1
+2,fox,3,3,-3,Redunca redunca,Multi-tiered empowering throughput,1
+2,fox,3,1,-4,Passer domesticus,Switchable executive attitude,1
+1,eagle,3,1,-1,Stenella coeruleoalba,Object-based multi-tasking moratorium,3
+1,fox,1,1,0,Ovis canadensis,Public-key 4th generation portal,2
