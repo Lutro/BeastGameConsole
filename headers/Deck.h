@@ -31,7 +31,9 @@ public:
     Deck& createShamanStarterDeck();
     Deck& createHunterStarterDeck();
     
-    PQueue<Card> deckList;
+    PQueue<Card>* deckList;
+    
+    friend ostream &operator<<(ostream &output, Deck d);
 private:
     int currentSize;
     string deckName;

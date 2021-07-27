@@ -5,6 +5,8 @@
 #include <fstream>
 #include <vector>
 
+#include "Entity.h"
+
 using namespace std;
 
 enum class Type
@@ -50,7 +52,7 @@ class Card {
         void setEffect(int);
     
     
-    friend ostream &operator<<(ostream &output, const Card c);
+        friend ostream &operator<<(ostream &output, const Card c);
     
     private:
         Type mType;

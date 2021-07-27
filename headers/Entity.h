@@ -69,7 +69,7 @@ class Entity
         Deck getDeck();
         
         
-    private: 
+    protected: 
         std::string name;
         int hitpoints;
         int mana;

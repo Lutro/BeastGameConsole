@@ -5,7 +5,6 @@
 #include "headers/Card.h"
 #include "headers/Game.h"
 #include "headers/Deck.h"
-#include "headers/Entity.h"
 #include "util/FileUtil.h"
 
 
@@ -46,37 +45,12 @@ int main()
     
     srand(time(NULL));
     
-    CardStore cs;
-    Deck d = Deck(cs);
-    d = d.createHunterStarterDeck();
+    // Deck d = Deck(cs);
+    // d = d.createHunterStarterDeck();
     
-    printQueue(d.deckList);
-    cout << endl;
+    // printQueue(d.deckList);
+    // cout << endl;
     
-    Entity player = Entity();
-    player.setEntityName("Player Test");
-    player.setSpiritType(CharacterType::Hunter);
-    player.generateDeck(CharacterType::Hunter);
-    
-    cout << player.getEntityName() << endl;
-    Deck p = player.getDeck();
-    printQueue(p.deckList);
-    
-    // cout << player.getDeck() << endl;
-    // printQueue();
-    
-    
-  // Queue of int values
-//   Queue<int> intQueue;
-//   for (int i = 0; i < 10; i++)
-//     intQueue.enqueue(i); // Add i to the queue
-
-//   printQueue(intQueue);
-  
-  
-    // Creating an object of CSVWriter
-    // Get the data from CSV File
-   
   
 //   // ==========================
 //   Queue<Card> pQueue;
