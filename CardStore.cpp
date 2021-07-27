@@ -43,6 +43,7 @@ void CardStore::setHunterCards()
     hunterCardTable = reader.readData();
 }
 
+// To do
 Card CardStore::getRandomCard()
 {
     

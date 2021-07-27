@@ -52,7 +52,7 @@ class Card {
         void setEffect(int);
     
     
-    friend ostream &operator<<(ostream &output, const Card c);
+        friend ostream &operator<<(ostream &output, const Card c);
     
     private:
         Type mType;

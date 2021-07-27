@@ -53,6 +53,7 @@ void Game::displaySpiritCharacters()
 
 void Game::startNewGame()
 {
+    CardStore cs;
     // get player name
     string playerName;
     cout << "Welcome, Brave Warrior. What is your name?" << endl;
@@ -64,7 +65,11 @@ void Game::startNewGame()
     // get player character type
     cout << "What Is Your Animal Spirit Force:" << endl;
     
+    //Initialize a deck with acces to the card store
+    Deck playerStarterDeck = Deck(cs);
+    
     bool isCharacterSet = false;
+    
     int option;
     while(!isCharacterSet)
     {
@@ -74,14 +79,17 @@ void Game::startNewGame()
             case 1:
                 mPlayer.setSpiritType(CharacterType::Hunter);
                 isCharacterSet = true;
+                playerStarterDeck = playerStarterDeck.createHunterStarterDeck();
                 break;
             case 2:
                 mPlayer.setSpiritType(CharacterType::Warrior);
                 isCharacterSet = true;
+                playerStarterDeck = playerStarterDeck.createWarriorStarterDeck();
                 break;
             case 3:
                 mPlayer.setSpiritType(CharacterType::Shaman);
                 isCharacterSet = true;
+                playerStarterDeck = playerStarterDeck.createShamanStarterDeck();
                 break;
             case 4:
                 // Go back
@@ -96,6 +104,9 @@ void Game::startNewGame()
                 break;
         }
         
+        mPlayer.setPlayerDeck(playerStarterDeck);
+       
+        cout << mPlayer;
     }
     
     // 
