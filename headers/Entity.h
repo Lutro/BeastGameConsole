@@ -64,7 +64,6 @@ class Entity
         int getEntityMana();
         // Deck getDeck();
         
-        
     protected: 
         std::string name;
         int hitpoints;

@@ -19,6 +19,7 @@ public:
     const CharacterType getSpiritType() const;
     void setSpiritType(CharacterType);
     void setPlayerDeck(Deck);
+    void setPlayerHand(Hand);
     
     friend ostream &operator<<(ostream &output, const Player p);
     

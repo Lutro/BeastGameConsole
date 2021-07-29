@@ -45,8 +45,13 @@ int main()
     
     srand(time(NULL));
     
+    // CardStore cs;
     // Deck d = Deck(cs);
     // d = d.createHunterStarterDeck();
+    
+    // Hand h = Hand();
+    // h.drawCardFromDeck(d);
+    // cout << h;
     
     // printQueue(d.deckList);
     // cout << endl;

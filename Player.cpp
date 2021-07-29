@@ -15,6 +15,11 @@ void Player::setPlayerDeck(Deck d)
     playerDeck = d;
 }
 
+void Player::setPlayerHand(Hand h)
+{
+    playerHand = h;
+}
+
 const CharacterType Player::getSpiritType() const
 {
     return spiritType;
@@ -58,6 +63,7 @@ bool Player::still_alive()
         "\nHP: " << p.hitpoints <<
         "\nMana: " << p.mana <<
         "\nDeck: \n" << (p.playerDeck) <<
+        "\nHand: \n" << (p.playerHand) <<
         "\n======================"
         << endl;
         
